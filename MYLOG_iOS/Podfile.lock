@@ -1,7 +1,7 @@
 PODS:
-  - Alamofire (5.6.1)
+  - Alamofire (5.7.1)
   - FSCalendar (2.8.4)
-  - Kingfisher (7.6.2)
+  - Kingfisher (7.8.1)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
@@ -42,9 +42,9 @@ SPEC REPOS:
     - Then
 
 SPEC CHECKSUMS:
-  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
-  Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
+  Kingfisher: 63f677311d36a3473f6b978584f8a3845d023dc5
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
@@ -52,6 +52,6 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: a28e2853c4246af6329d2cd17515cc86eb59934f
+PODFILE CHECKSUM: 0814820225a3bcd9d84e7f099cefec9134898ca0
 
 COCOAPODS: 1.12.1

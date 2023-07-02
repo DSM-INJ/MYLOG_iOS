@@ -12,6 +12,13 @@
 		3F15CF1F2A504EFA002DD849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F15CF1E2A504EFA002DD849 /* Assets.xcassets */; };
 		3F15CF222A504EFA002DD849 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F15CF212A504EFA002DD849 /* Preview Assets.xcassets */; };
 		3F3833F72A51B44500798059 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833F62A51B44500798059 /* Launch Screen.storyboard */; };
+		3F3834022A51B57F00798059 /* Home in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833F92A51B57E00798059 /* Home */; };
+		3F3834032A51B57F00798059 /* Chart in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833FA2A51B57F00798059 /* Chart */; };
+		3F3834042A51B57F00798059 /* Tag in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833FB2A51B57F00798059 /* Tag */; };
+		3F3834052A51B57F00798059 /* Interfaces in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833FC2A51B57F00798059 /* Interfaces */; };
+		3F3834062A51B57F00798059 /* SignIn in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833FD2A51B57F00798059 /* SignIn */; };
+		3F3834072A51B57F00798059 /* MyPage in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833FE2A51B57F00798059 /* MyPage */; };
+		3F3834082A51B57F00798059 /* NewDiary in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833FF2A51B57F00798059 /* NewDiary */; };
 		9BFCC9E9B4168DDF6576C23A /* Pods_MYLOG_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C13AC8298DB64AB58740A5 /* Pods_MYLOG_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +29,13 @@
 		3F15CF1E2A504EFA002DD849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F15CF212A504EFA002DD849 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3F3833F62A51B44500798059 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		3F3833F92A51B57E00798059 /* Home */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Home; path = ../../../MYLOG/MYLOG/MYLOG/Home; sourceTree = "<group>"; };
+		3F3833FA2A51B57F00798059 /* Chart */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Chart; path = ../../../MYLOG/MYLOG/MYLOG/Chart; sourceTree = "<group>"; };
+		3F3833FB2A51B57F00798059 /* Tag */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Tag; path = ../../../MYLOG/MYLOG/MYLOG/Tag; sourceTree = "<group>"; };
+		3F3833FC2A51B57F00798059 /* Interfaces */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Interfaces; path = ../../../MYLOG/MYLOG/MYLOG/Interfaces; sourceTree = "<group>"; };
+		3F3833FD2A51B57F00798059 /* SignIn */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SignIn; path = ../../../MYLOG/MYLOG/MYLOG/SignIn; sourceTree = "<group>"; };
+		3F3833FE2A51B57F00798059 /* MyPage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyPage; path = ../../../MYLOG/MYLOG/MYLOG/MyPage; sourceTree = "<group>"; };
+		3F3833FF2A51B57F00798059 /* NewDiary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NewDiary; path = ../../../MYLOG/MYLOG/MYLOG/NewDiary; sourceTree = "<group>"; };
 		7E835344FE29CDBA9D207860 /* Pods-MYLOG_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYLOG_iOS.release.xcconfig"; path = "Target Support Files/Pods-MYLOG_iOS/Pods-MYLOG_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		9E8D2399419F621AA4114271 /* Pods-MYLOG_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYLOG_iOS.debug.xcconfig"; path = "Target Support Files/Pods-MYLOG_iOS/Pods-MYLOG_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A6C13AC8298DB64AB58740A5 /* Pods_MYLOG_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MYLOG_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +82,13 @@
 		3F15CF192A504EF9002DD849 /* MYLOG_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				3F3833FA2A51B57F00798059 /* Chart */,
+				3F3833F92A51B57E00798059 /* Home */,
+				3F3833FC2A51B57F00798059 /* Interfaces */,
+				3F3833FE2A51B57F00798059 /* MyPage */,
+				3F3833FF2A51B57F00798059 /* NewDiary */,
+				3F3833FD2A51B57F00798059 /* SignIn */,
+				3F3833FB2A51B57F00798059 /* Tag */,
 				3F15CF1A2A504EF9002DD849 /* MYLOG_iOSApp.swift */,
 				3F15CF1C2A504EF9002DD849 /* ContentView.swift */,
 				3F15CF1E2A504EFA002DD849 /* Assets.xcassets */,
@@ -155,7 +176,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3833F72A51B44500798059 /* Launch Screen.storyboard in Resources */,
+				3F3834022A51B57F00798059 /* Home in Resources */,
 				3F15CF222A504EFA002DD849 /* Preview Assets.xcassets in Resources */,
+				3F3834082A51B57F00798059 /* NewDiary in Resources */,
+				3F3834042A51B57F00798059 /* Tag in Resources */,
+				3F3834032A51B57F00798059 /* Chart in Resources */,
+				3F3834052A51B57F00798059 /* Interfaces in Resources */,
+				3F3834062A51B57F00798059 /* SignIn in Resources */,
+				3F3834072A51B57F00798059 /* MyPage in Resources */,
 				3F15CF1F2A504EFA002DD849 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
