@@ -1,13 +1,13 @@
 //
 //  SelectionTabKey.swift
-//  MYLOG
+//  MYLOG_iOS
 //
-//  Created by 강인혜 on 30/6/23.
+//  Created by 강인혜 on 2/7/23.
 //
 
 import SwiftUI
 
-struct SelectionTabbKey: EnvironmentKey {
+struct SelectionTabKey: EnvironmentKey {
     static var defaultValue: Binding<TabFlow> = .constant(.home)
 }
 
@@ -17,4 +17,3 @@ public extension EnvironmentValues {
         set { self[SelectionTabbKey.self] = newValue }
     }
 }
-

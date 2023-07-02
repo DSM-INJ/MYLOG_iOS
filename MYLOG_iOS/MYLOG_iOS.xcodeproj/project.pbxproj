@@ -8,34 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		3F15CF1B2A504EF9002DD849 /* MYLOG_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15CF1A2A504EF9002DD849 /* MYLOG_iOSApp.swift */; };
-		3F15CF1D2A504EF9002DD849 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15CF1C2A504EF9002DD849 /* ContentView.swift */; };
 		3F15CF1F2A504EFA002DD849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F15CF1E2A504EFA002DD849 /* Assets.xcassets */; };
 		3F15CF222A504EFA002DD849 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F15CF212A504EFA002DD849 /* Preview Assets.xcassets */; };
 		3F3833F72A51B44500798059 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833F62A51B44500798059 /* Launch Screen.storyboard */; };
-		3F3834022A51B57F00798059 /* Home in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833F92A51B57E00798059 /* Home */; };
-		3F3834032A51B57F00798059 /* Chart in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833FA2A51B57F00798059 /* Chart */; };
-		3F3834042A51B57F00798059 /* Tag in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833FB2A51B57F00798059 /* Tag */; };
-		3F3834052A51B57F00798059 /* Interfaces in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833FC2A51B57F00798059 /* Interfaces */; };
-		3F3834062A51B57F00798059 /* SignIn in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833FD2A51B57F00798059 /* SignIn */; };
-		3F3834072A51B57F00798059 /* MyPage in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833FE2A51B57F00798059 /* MyPage */; };
-		3F3834082A51B57F00798059 /* NewDiary in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833FF2A51B57F00798059 /* NewDiary */; };
+		3FF76ADD2A51C06200283FE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76ADC2A51C06200283FE2 /* ContentView.swift */; };
+		3FF76AE62A51C54C00283FE2 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AE52A51C54C00283FE2 /* SignInView.swift */; };
+		3FF76AEB2A51C56700283FE2 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AEA2A51C56700283FE2 /* AppState.swift */; };
+		3FF76AED2A51C59900283FE2 /* TabBarHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AEC2A51C59900283FE2 /* TabBarHidden.swift */; };
+		3FF76AEF2A51C5B000283FE2 /* SelectionTabKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AEE2A51C5B000283FE2 /* SelectionTabKey.swift */; };
+		3FF76AF12A51C5C700283FE2 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AF02A51C5C700283FE2 /* CornerRadius.swift */; };
+		3FF76AF32A51C5DF00283FE2 /* ShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AF22A51C5DF00283FE2 /* ShadowStyle.swift */; };
+		3FF76AF52A51C64300283FE2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AF42A51C64300283FE2 /* HomeView.swift */; };
+		3FF76AF72A51C65C00283FE2 /* CustomCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AF62A51C65C00283FE2 /* CustomCalendar.swift */; };
+		3FF76AF92A51C66E00283FE2 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AF82A51C66E00283FE2 /* TagView.swift */; };
+		3FF76AFB2A51C68600283FE2 /* NewDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AFA2A51C68600283FE2 /* NewDiaryView.swift */; };
+		3FF76AFD2A51C69B00283FE2 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AFC2A51C69B00283FE2 /* ChartView.swift */; };
+		3FF76AFF2A51C6AF00283FE2 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AFE2A51C6AF00283FE2 /* MyPageView.swift */; };
 		9BFCC9E9B4168DDF6576C23A /* Pods_MYLOG_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C13AC8298DB64AB58740A5 /* Pods_MYLOG_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F15CF172A504EF9002DD849 /* MYLOG_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYLOG_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F15CF1A2A504EF9002DD849 /* MYLOG_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MYLOG_iOSApp.swift; sourceTree = "<group>"; };
-		3F15CF1C2A504EF9002DD849 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3F15CF1E2A504EFA002DD849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F15CF212A504EFA002DD849 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3F3833F62A51B44500798059 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		3F3833F92A51B57E00798059 /* Home */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Home; path = ../../../MYLOG/MYLOG/MYLOG/Home; sourceTree = "<group>"; };
-		3F3833FA2A51B57F00798059 /* Chart */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Chart; path = ../../../MYLOG/MYLOG/MYLOG/Chart; sourceTree = "<group>"; };
-		3F3833FB2A51B57F00798059 /* Tag */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Tag; path = ../../../MYLOG/MYLOG/MYLOG/Tag; sourceTree = "<group>"; };
-		3F3833FC2A51B57F00798059 /* Interfaces */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Interfaces; path = ../../../MYLOG/MYLOG/MYLOG/Interfaces; sourceTree = "<group>"; };
-		3F3833FD2A51B57F00798059 /* SignIn */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SignIn; path = ../../../MYLOG/MYLOG/MYLOG/SignIn; sourceTree = "<group>"; };
-		3F3833FE2A51B57F00798059 /* MyPage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyPage; path = ../../../MYLOG/MYLOG/MYLOG/MyPage; sourceTree = "<group>"; };
-		3F3833FF2A51B57F00798059 /* NewDiary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NewDiary; path = ../../../MYLOG/MYLOG/MYLOG/NewDiary; sourceTree = "<group>"; };
+		3FF76ADC2A51C06200283FE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3FF76AE52A51C54C00283FE2 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		3FF76AEA2A51C56700283FE2 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		3FF76AEC2A51C59900283FE2 /* TabBarHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHidden.swift; sourceTree = "<group>"; };
+		3FF76AEE2A51C5B000283FE2 /* SelectionTabKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTabKey.swift; sourceTree = "<group>"; };
+		3FF76AF02A51C5C700283FE2 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		3FF76AF22A51C5DF00283FE2 /* ShadowStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowStyle.swift; sourceTree = "<group>"; };
+		3FF76AF42A51C64300283FE2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3FF76AF62A51C65C00283FE2 /* CustomCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendar.swift; sourceTree = "<group>"; };
+		3FF76AF82A51C66E00283FE2 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		3FF76AFA2A51C68600283FE2 /* NewDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiaryView.swift; sourceTree = "<group>"; };
+		3FF76AFC2A51C69B00283FE2 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		3FF76AFE2A51C6AF00283FE2 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		7E835344FE29CDBA9D207860 /* Pods-MYLOG_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYLOG_iOS.release.xcconfig"; path = "Target Support Files/Pods-MYLOG_iOS/Pods-MYLOG_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		9E8D2399419F621AA4114271 /* Pods-MYLOG_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYLOG_iOS.debug.xcconfig"; path = "Target Support Files/Pods-MYLOG_iOS/Pods-MYLOG_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A6C13AC8298DB64AB58740A5 /* Pods_MYLOG_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MYLOG_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,18 +92,18 @@
 		3F15CF192A504EF9002DD849 /* MYLOG_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				3F3833FA2A51B57F00798059 /* Chart */,
-				3F3833F92A51B57E00798059 /* Home */,
-				3F3833FC2A51B57F00798059 /* Interfaces */,
-				3F3833FE2A51B57F00798059 /* MyPage */,
-				3F3833FF2A51B57F00798059 /* NewDiary */,
-				3F3833FD2A51B57F00798059 /* SignIn */,
-				3F3833FB2A51B57F00798059 /* Tag */,
+				3FF76AE92A51C55E00283FE2 /* Interfaces */,
+				3FF76AE42A51C53B00283FE2 /* SignIn */,
+				3FF76AE32A51C2BB00283FE2 /* Home */,
+				3FF76AE22A51C2B400283FE2 /* Tag */,
+				3FF76AE12A51C2AC00283FE2 /* NewDiary */,
+				3FF76AE02A51C29B00283FE2 /* Chart */,
+				3FF76ADF2A51C29100283FE2 /* MyPage */,
 				3F15CF1A2A504EF9002DD849 /* MYLOG_iOSApp.swift */,
-				3F15CF1C2A504EF9002DD849 /* ContentView.swift */,
 				3F15CF1E2A504EFA002DD849 /* Assets.xcassets */,
 				3F15CF202A504EFA002DD849 /* Preview Content */,
 				3F3833F62A51B44500798059 /* Launch Screen.storyboard */,
+				3FF76ADC2A51C06200283FE2 /* ContentView.swift */,
 			);
 			path = MYLOG_iOS;
 			sourceTree = "<group>";
@@ -104,6 +114,67 @@
 				3F15CF212A504EFA002DD849 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3FF76ADF2A51C29100283FE2 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				3FF76AFE2A51C6AF00283FE2 /* MyPageView.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		3FF76AE02A51C29B00283FE2 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				3FF76AFC2A51C69B00283FE2 /* ChartView.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		3FF76AE12A51C2AC00283FE2 /* NewDiary */ = {
+			isa = PBXGroup;
+			children = (
+				3FF76AFA2A51C68600283FE2 /* NewDiaryView.swift */,
+			);
+			path = NewDiary;
+			sourceTree = "<group>";
+		};
+		3FF76AE22A51C2B400283FE2 /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				3FF76AF82A51C66E00283FE2 /* TagView.swift */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
+		3FF76AE32A51C2BB00283FE2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3FF76AF42A51C64300283FE2 /* HomeView.swift */,
+				3FF76AF62A51C65C00283FE2 /* CustomCalendar.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3FF76AE42A51C53B00283FE2 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				3FF76AE52A51C54C00283FE2 /* SignInView.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		3FF76AE92A51C55E00283FE2 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				3FF76AEA2A51C56700283FE2 /* AppState.swift */,
+				3FF76AEC2A51C59900283FE2 /* TabBarHidden.swift */,
+				3FF76AEE2A51C5B000283FE2 /* SelectionTabKey.swift */,
+				3FF76AF02A51C5C700283FE2 /* CornerRadius.swift */,
+				3FF76AF22A51C5DF00283FE2 /* ShadowStyle.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		57A1DC636D9DFBEAF9878DB3 /* Pods */ = {
@@ -176,14 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3833F72A51B44500798059 /* Launch Screen.storyboard in Resources */,
-				3F3834022A51B57F00798059 /* Home in Resources */,
 				3F15CF222A504EFA002DD849 /* Preview Assets.xcassets in Resources */,
-				3F3834082A51B57F00798059 /* NewDiary in Resources */,
-				3F3834042A51B57F00798059 /* Tag in Resources */,
-				3F3834032A51B57F00798059 /* Chart in Resources */,
-				3F3834052A51B57F00798059 /* Interfaces in Resources */,
-				3F3834062A51B57F00798059 /* SignIn in Resources */,
-				3F3834072A51B57F00798059 /* MyPage in Resources */,
 				3F15CF1F2A504EFA002DD849 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,7 +301,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F15CF1D2A504EF9002DD849 /* ContentView.swift in Sources */,
+				3FF76AF52A51C64300283FE2 /* HomeView.swift in Sources */,
+				3FF76AFD2A51C69B00283FE2 /* ChartView.swift in Sources */,
+				3FF76AF32A51C5DF00283FE2 /* ShadowStyle.swift in Sources */,
+				3FF76AF92A51C66E00283FE2 /* TagView.swift in Sources */,
+				3FF76AE62A51C54C00283FE2 /* SignInView.swift in Sources */,
+				3FF76AEF2A51C5B000283FE2 /* SelectionTabKey.swift in Sources */,
+				3FF76AF72A51C65C00283FE2 /* CustomCalendar.swift in Sources */,
+				3FF76AFF2A51C6AF00283FE2 /* MyPageView.swift in Sources */,
+				3FF76AEB2A51C56700283FE2 /* AppState.swift in Sources */,
+				3FF76AFB2A51C68600283FE2 /* NewDiaryView.swift in Sources */,
+				3FF76AED2A51C59900283FE2 /* TabBarHidden.swift in Sources */,
+				3FF76ADD2A51C06200283FE2 /* ContentView.swift in Sources */,
+				3FF76AF12A51C5C700283FE2 /* CornerRadius.swift in Sources */,
 				3F15CF1B2A504EF9002DD849 /* MYLOG_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +450,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
@@ -405,6 +482,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.7;

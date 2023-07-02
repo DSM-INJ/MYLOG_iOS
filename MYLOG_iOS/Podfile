@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '14.7'
+# platform :ios, '15.0'
 
 target 'MYLOG_iOS' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -13,7 +13,7 @@ target 'MYLOG_iOS' do
 	pod 'RxCocoa'
 	pod 'SnapKit'
 	pod 'Then'
-	pod 'FSCalendar'
 	pod 'Kingfisher'
+	pod 'FSCalendar'
 
 end

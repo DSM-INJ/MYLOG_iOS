@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  MYLOG
 //
-//  Created by 강인혜 on 28/6/23.
+//  Created by 강인혜 on 1/7/23.
 //
 
 import SwiftUI
@@ -14,7 +14,7 @@ struct ContentView: View {
     @EnvironmentObject var appState: AppState
     
     var tabItem: [(String, TabFlow)] {
-        var tabItems: [(String, TabFlow)] = [
+        let tabItems: [(String, TabFlow)] = [
             ("calendar", .home),
             ("magnifyingglass", .tag),
             ("plus", .newDiary),
