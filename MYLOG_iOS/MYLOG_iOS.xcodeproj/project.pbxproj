@@ -11,6 +11,7 @@
 		3F15CF1D2A504EF9002DD849 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15CF1C2A504EF9002DD849 /* ContentView.swift */; };
 		3F15CF1F2A504EFA002DD849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F15CF1E2A504EFA002DD849 /* Assets.xcassets */; };
 		3F15CF222A504EFA002DD849 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F15CF212A504EFA002DD849 /* Preview Assets.xcassets */; };
+		3F3833F72A51B44500798059 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833F62A51B44500798059 /* Launch Screen.storyboard */; };
 		9BFCC9E9B4168DDF6576C23A /* Pods_MYLOG_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C13AC8298DB64AB58740A5 /* Pods_MYLOG_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +21,7 @@
 		3F15CF1C2A504EF9002DD849 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3F15CF1E2A504EFA002DD849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F15CF212A504EFA002DD849 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F3833F62A51B44500798059 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		7E835344FE29CDBA9D207860 /* Pods-MYLOG_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYLOG_iOS.release.xcconfig"; path = "Target Support Files/Pods-MYLOG_iOS/Pods-MYLOG_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		9E8D2399419F621AA4114271 /* Pods-MYLOG_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYLOG_iOS.debug.xcconfig"; path = "Target Support Files/Pods-MYLOG_iOS/Pods-MYLOG_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A6C13AC8298DB64AB58740A5 /* Pods_MYLOG_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MYLOG_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +72,7 @@
 				3F15CF1C2A504EF9002DD849 /* ContentView.swift */,
 				3F15CF1E2A504EFA002DD849 /* Assets.xcassets */,
 				3F15CF202A504EFA002DD849 /* Preview Content */,
+				3F3833F62A51B44500798059 /* Launch Screen.storyboard */,
 			);
 			path = MYLOG_iOS;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3833F72A51B44500798059 /* Launch Screen.storyboard in Resources */,
 				3F15CF222A504EFA002DD849 /* Preview Assets.xcassets in Resources */,
 				3F15CF1F2A504EFA002DD849 /* Assets.xcassets in Resources */,
 			);
