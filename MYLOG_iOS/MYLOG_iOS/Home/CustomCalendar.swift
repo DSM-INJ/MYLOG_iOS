@@ -19,6 +19,7 @@ class CustomCalendarVC: UIViewController, FSCalendarDelegate, FSCalendarDelegate
         $0.appearance.caseOptions = FSCalendarCaseOptions.weekdayUsesUpperCase
         
         $0.appearance.headerDateFormat = "MMM, YYYY"
+        $0.weekdayHeight = 50
         $0.appearance.headerTitleFont = .systemFont(ofSize: 25, weight: .bold)
         $0.appearance.headerTitleColor = UIColor(named: "LargeTitleColor")
         $0.appearance.headerTitleAlignment = .center
@@ -35,6 +36,9 @@ class CustomCalendarVC: UIViewController, FSCalendarDelegate, FSCalendarDelegate
 //        $0.frame = CGRect(x: 0, y: 0, width: view.frame.size.width - 48, height: view.frame.size.width)
         
         $0.placeholderType = .none
+    }
+    private let separatorLine = UIView().then {
+        $0.backgroundColor = UIColor(named: "SeparatorColor")
     }
     
     private let sunLabel = UILabel().then {
@@ -98,7 +102,8 @@ class CustomCalendarVC: UIViewController, FSCalendarDelegate, FSCalendarDelegate
     func addView() {
         [
             fscalendar,
-            backView
+            backView,
+            separatorLine
         ].forEach {
             view.addSubview($0)
         }
@@ -117,37 +122,46 @@ class CustomCalendarVC: UIViewController, FSCalendarDelegate, FSCalendarDelegate
     
     func setLayout() {
         fscalendar.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(73)
-            $0.horizontalEdges.equalToSuperview().inset(24)
-            $0.height.equalTo(view.frame.size.height/2)
+            $0.horizontalEdges.equalToSuperview().inset(20)
+            $0.height.equalTo(view.frame.size.height - 450)
         }
         backView.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(118)
-            $0.height.equalTo(22)
+            $0.top.equalToSuperview().inset(58)
+            $0.height.equalTo(25)
             $0.horizontalEdges.equalToSuperview().inset(24)
         }
-        monLabel.snp.makeConstraints {
-            $0.top.left.bottom.equalToSuperview()
+        separatorLine.snp.makeConstraints {
+            $0.top.equalTo(backView.snp.bottom).offset(7)
+            $0.horizontalEdges.equalToSuperview().inset(14)
+            $0.height.equalTo(1)
+        }
+        sunLabel.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview()
+            $0.left.equalToSuperview().inset(8)
+        }
+        monLabel.snp.makeConstraints{
+            $0.top.bottom.equalToSuperview()
+            $0.left.equalTo(sunLabel.snp.right).offset(26)
         }
         tueLabel.snp.makeConstraints {
             $0.top.bottom.equalToSuperview()
-            $0.left.equalTo(monLabel.snp.right).offset(backView.frame.size.width*0.7)
+            $0.left.equalTo(monLabel.snp.right).offset(26)
         }
         wedLabel.snp.makeConstraints {
             $0.top.bottom.equalToSuperview()
-            $0.left.equalTo(tueLabel.snp.right).offset(backView.frame.size.width*0.7)
+            $0.left.equalTo(tueLabel.snp.right).offset(28)
         }
         thuLabel.snp.makeConstraints {
             $0.top.bottom.equalToSuperview()
-            $0.left.equalTo(wedLabel.snp.right).offset(backView.frame.size.width*0.7)
+            $0.left.equalTo(wedLabel.snp.right).offset(26)
         }
         friLabel.snp.makeConstraints {
             $0.top.bottom.equalToSuperview()
-            $0.left.equalTo(thuLabel.snp.right).offset(backView.frame.size.width*0.7)
+            $0.left.equalTo(thuLabel.snp.right).offset(30)
         }
         satLabel.snp.makeConstraints {
-            $0.top.right.bottom.equalToSuperview()
-            $0.left.equalTo(friLabel.snp.right).offset(backView.frame.size.width*0.7)
+            $0.top.bottom.equalToSuperview()
+            $0.left.equalTo(friLabel.snp.right).offset(30)
         }
     }
 }

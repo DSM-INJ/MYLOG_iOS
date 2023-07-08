@@ -49,8 +49,8 @@ struct ContentView: View {
                             Color("TabBarBackColor")
                                 .cornerRadius(15, corners: [.topLeft, .topRight])
                                 .ignoresSafeArea()
+                                .shadow()
                         }
-                        .shadow()
                         .environment(\.selectionTabbKey, $selection)
                 }
             }
@@ -81,12 +81,10 @@ struct ContentView: View {
                 selection = tag
             }
         } label: {
-            VStack(spacing: 7) {
-                Image(systemName: systemName)
-                    .foregroundColor(tag == selection ? Color("TabBarColor") : Color("SubtitleColor"))
-            }
-            .padding(.top, 12)
-            .padding(.bottom, 4)
+            Image(systemName: systemName)
+                .foregroundColor(tag == selection ? Color("TabBarColor") : Color("SubtitleColor"))
+                .font(.system(size: 30, weight: .semibold))
+                .padding(.top, 21)
         }
     }
 }
