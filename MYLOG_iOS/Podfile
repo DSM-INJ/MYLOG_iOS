@@ -15,6 +15,7 @@ target 'MYLOG_iOS' do
 	pod 'Then'
 	pod 'Kingfisher'
 	pod 'FSCalendar'
+	pod 'FloatingPanel'
 
 end
 

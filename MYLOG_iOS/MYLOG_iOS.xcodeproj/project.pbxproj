@@ -13,6 +13,7 @@
 		3F3833F72A51B44500798059 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833F62A51B44500798059 /* Launch Screen.storyboard */; };
 		3FC9BED02A59906A0065DAC4 /* HideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9BECF2A59906A0065DAC4 /* HideTabBar.swift */; };
 		3FC9BED22A5992E30065DAC4 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9BED12A5992E30065DAC4 /* Image.xcassets */; };
+		3FC9BED42A5ACE2F0065DAC4 /* HalfSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9BED32A5ACE2F0065DAC4 /* HalfSheet.swift */; };
 		3FF76ADD2A51C06200283FE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76ADC2A51C06200283FE2 /* ContentView.swift */; };
 		3FF76AE62A51C54C00283FE2 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AE52A51C54C00283FE2 /* SignInView.swift */; };
 		3FF76AEB2A51C56700283FE2 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AEA2A51C56700283FE2 /* AppState.swift */; };
@@ -37,6 +38,7 @@
 		3F3833F62A51B44500798059 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		3FC9BECF2A59906A0065DAC4 /* HideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTabBar.swift; sourceTree = "<group>"; };
 		3FC9BED12A5992E30065DAC4 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		3FC9BED32A5ACE2F0065DAC4 /* HalfSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheet.swift; sourceTree = "<group>"; };
 		3FF76ADC2A51C06200283FE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3FF76AE52A51C54C00283FE2 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		3FF76AEA2A51C56700283FE2 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				3FF76AF02A51C5C700283FE2 /* CornerRadius.swift */,
 				3FF76AF22A51C5DF00283FE2 /* ShadowStyle.swift */,
 				3FC9BECF2A59906A0065DAC4 /* HideTabBar.swift */,
+				3FC9BED32A5ACE2F0065DAC4 /* HalfSheet.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				3FF76AF52A51C64300283FE2 /* HomeView.swift in Sources */,
 				3FF76AFD2A51C69B00283FE2 /* ChartView.swift in Sources */,
 				3FF76AF32A51C5DF00283FE2 /* ShadowStyle.swift in Sources */,
+				3FC9BED42A5ACE2F0065DAC4 /* HalfSheet.swift in Sources */,
 				3FC9BED02A59906A0065DAC4 /* HideTabBar.swift in Sources */,
 				3FF76AF92A51C66E00283FE2 /* TagView.swift in Sources */,
 				3FF76AE62A51C54C00283FE2 /* SignInView.swift in Sources */,

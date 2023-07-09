@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.7.1)
+  - FloatingPanel (2.6.3)
   - FSCalendar (2.8.4)
   - Kingfisher (7.8.1)
   - Moya (15.0.0):
@@ -20,6 +21,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - FloatingPanel
   - FSCalendar
   - Kingfisher
   - Moya
@@ -32,6 +34,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - FloatingPanel
     - FSCalendar
     - Kingfisher
     - Moya
@@ -43,6 +46,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  FloatingPanel: ff837f4a65b2a81716bf9bfb9e43c280627db993
   FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
   Kingfisher: 63f677311d36a3473f6b978584f8a3845d023dc5
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
@@ -52,6 +56,6 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 9d19f9bb30fd79782ad3d03d25db5c74cc44bc17
+PODFILE CHECKSUM: 2e5eaf3a1cbb4a80c185986b0712ab9b91652bbe
 
 COCOAPODS: 1.12.1
