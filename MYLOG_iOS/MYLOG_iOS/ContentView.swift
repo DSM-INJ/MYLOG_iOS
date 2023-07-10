@@ -39,6 +39,7 @@ struct ContentView: View {
                     .tag(TabFlow.myPage)
             }
             .environment(\.tabbarHidden, $tabbarHidden)
+            .ignoresSafeArea(.keyboard)
 
             if !tabbarHidden {
                 VStack {
@@ -47,14 +48,15 @@ struct ContentView: View {
                     tabbarView()
                         .background {
                             Color("TabBarBackColor")
-                                .cornerRadius(15, corners: [.topLeft, .topRight])
+                                .cornerRadius(20, corners: [.topLeft, .topRight])
                                 .ignoresSafeArea()
-                                .shadow()
+                                .shadow(color: .black.opacity(0.25), x: 0, y: 0, blur: 10, spread: 1)
                         }
                         .environment(\.selectionTabbKey, $selection)
                 }
             }
         }
+        .ignoresSafeArea(.keyboard)
         .onChange(of: tabbarHidden) { _ in
             UITabBar.hideTabBar()
         }
