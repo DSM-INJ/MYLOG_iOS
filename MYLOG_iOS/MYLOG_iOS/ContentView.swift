@@ -31,7 +31,7 @@ struct ContentView: View {
                     .tag(TabFlow.home)
                 TagView()
                     .tag(TabFlow.tag)
-                NewDiaryView()
+                NewDiaryView(viewModel: NewDiaryViewModel())
                     .tag(TabFlow.newDiary)
                 ChartView()
                     .tag(TabFlow.chart)

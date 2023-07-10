@@ -10,13 +10,13 @@ struct DiaryView: View {
     
     
     let weatherType: String?
-
+    
     init(
         weatherType: String?
     ) {
         self.weatherType = weatherType
     }
-
+    
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .center) {
@@ -34,13 +34,12 @@ struct DiaryView: View {
                             .padding(.leading, 2)
                     }
                     .padding(.trailing, 32)
-        
+                    
                     VStack(alignment: .leading) {
                         Text("Today")
                             .foregroundColor(.black)
                             .frame(height: 25, alignment: .top)
                             .font(.system(size: 20, weight: .semibold))
-    //                        .padding(.bottom, 9)
                         HStack {
                             Button {
                                 switch weatherType.self {
@@ -96,10 +95,10 @@ struct DiaryView: View {
                         }
                         .frame(height: 30)
                     }
-
+                    
                     Spacer()
                 }
-
+                
                 Divider()
                     .background(Color("SeparatorColor"))
                     .padding(.bottom, 20)
@@ -107,32 +106,20 @@ struct DiaryView: View {
                 Image("SampleImage")
                     .resizable()
                     .frame(width: 338, height: 338)
+                    .cornerRadius(15, corners: .allCorners)
                     .padding(.bottom, 28)
                 
-                TextField("일기 제목을 입력하세요.", text: $textFieldString) {
-                    hideKeyboard()
-                }
-                .foregroundColor(Color("LargeTitleColor"))
-                .font(.system(size: 20, weight: .bold))
-                .autocorrectionDisabled()
-                .textFieldStyle(PlainTextFieldStyle())
-                .padding(.horizontal, 4)
-                
-                ZStack(alignment: .topLeading) {
-                    TextEditor(text: $textEditorString)
+                VStack(alignment: .leading) {
+                    Text("In Singapore 🇸🇬")
+                        .foregroundColor(Color("LargeTitleColor"))
+                        .font(.system(size: 20, weight: .bold))
                         .padding(.horizontal, 4)
+                        .padding(.bottom, 2)
+                    
+                    Text("싱가포르에서의 세 번째 밤✨ 리버보트 타고 Marina Bay Sands 앞까지 돌고 왔는데")
                         .font(.system(size: 17, weight: .regular))
                         .foregroundColor(Color("SubtitleColor"))
-                        .autocorrectionDisabled()
-                        .multilineTextAlignment(.leading)
-                    
-                    if textEditorString.isEmpty {
-                        Text("일기 내용을 입력하세요.")
-                            .foregroundColor(Color("ShadowColor"))
-                            .font(.system(size: 17, weight: .regular))
-                            .padding(.top, 4)
-                            .padding(.horizontal, 6)
-                    }
+                        .padding(.horizontal, 4)
                 }
                 
                 Spacer(minLength: 300)
@@ -155,7 +142,7 @@ struct DiaryView_Previews: PreviewProvider {
 
 
 extension View {
-  func hideKeyboard() {
-    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-  }
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
 }
