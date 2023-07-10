@@ -31,7 +31,7 @@ public extension View {
 public struct Shadow: ViewModifier {
     public func body(content: Content) -> some View {
         content
-            .shadow(color: Color("ShadowColor").opacity(0.76), y: 1, blur: 10)
+            .shadow(color: Color("ShadowColor").opacity(0.24), y: 1, blur: 10)
     }
 }
 

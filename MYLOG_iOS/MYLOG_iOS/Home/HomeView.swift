@@ -6,18 +6,21 @@
 //
 
 import SwiftUI
+import SlideOverCard
 
 struct HomeView: View {
     @State var isShowingSheet = true
+    @State private var position = CardPosition.middle
+    @State private var background = BackgroundStyle.solid
+
     var body: some View {
-        VStack(alignment: .center) {
+        ZStack(alignment: .center) {
             CustomCalendar()
-        }
-        .sheet(isPresented: $isShowingSheet) {
-            HalfSheet {
-                Text("hello")
+
+            SlideOverCard($position, backgroundStyle: $background) {
+                DiaryView(weatherType: "SUNNY")
             }
-            .shadow(color: .black, x: 0, y: -2, blur: 20, spread: 0)
+            .shadow(color: .black.opacity(0.1), x: 0, y: -2, blur: 20, spread: 0)
         }
     }
 }

@@ -25,6 +25,7 @@ class CustomCalendarVC: UIViewController, FSCalendarDelegate, FSCalendarDelegate
         $0.appearance.headerTitleAlignment = .center
         $0.appearance.headerSeparatorColor = UIColor(named: "SeparatorColor")
         $0.appearance.borderDefaultColor = UIColor(named: "StrokeColor")
+        $0.appearance.borderSelectionColor = UIColor(named: "BlueColor")
         $0.appearance.selectionColor = UIColor(named: "SelectedDateColor")
         $0.appearance.titleFont = UIFont.systemFont(ofSize: 20, weight: .medium)
         $0.appearance.titleDefaultColor = .black
