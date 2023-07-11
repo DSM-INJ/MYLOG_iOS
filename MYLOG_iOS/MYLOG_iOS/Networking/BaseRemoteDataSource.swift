@@ -5,11 +5,12 @@
 //  Created by 강인혜 on 2023/07/10.
 //
 
+import Combine
+import CombineMoya
 import Foundation
 import Moya
-import Combine
 
-open class BaseRemoteDataSource<API: BaseAPI> {
+public class BaseRemoteDataSource<API: BaseAPI> {
     private let provider: MoyaProvider<API>
     private let decoder = JSONDecoder()
     private let maxRetryCount = 2
@@ -17,7 +18,7 @@ open class BaseRemoteDataSource<API: BaseAPI> {
     public init(
         provider: MoyaProvider<API>? = nil
     ) {
-        #if DEV || STAGE
+        #if DEBUG
         self.provider = provider ?? MoyaProvider(plugins: [MoyaLogginPlugin()])
         #else
         self.provider = provider ?? MoyaProvider(plugins: [MoyaLogginPlugin()])
@@ -44,10 +45,12 @@ open class BaseRemoteDataSource<API: BaseAPI> {
 
 private extension BaseRemoteDataSource {
     func defaultRequest(_ api: API) -> AnyPublisher<Response, Error> {
-        provider.requestPublisher(api, callbackQueue: .main)
+        return provider.requestPublisher(api, callbackQueue: .main)
             .retry(maxRetryCount)
             .timeout(45, scheduler: DispatchQueue.main)
-            .mapError { api.errorMap[$0.response?.statusCode ?? 0] ?? $0 as Error }
+            .mapError {
+                api.errorMap[$0.response?.statusCode ?? 0] ?? $0 as Error
+            }
             .eraseToAnyPublisher()
     }
 

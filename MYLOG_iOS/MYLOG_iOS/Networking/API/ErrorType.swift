@@ -8,6 +8,7 @@
 import Foundation
 
 public enum BaseErrorType: Error {
+    case unknown
     case badRequest
     case unauthorized
     case forbidden

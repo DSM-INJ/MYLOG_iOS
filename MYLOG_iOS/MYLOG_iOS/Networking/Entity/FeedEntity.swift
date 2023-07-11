@@ -8,23 +8,21 @@
 import Foundation
 
 public struct FeedEntity: Equatable, Hashable {
-    public init(content: String, createdAt: Date, image: String, sleepTime: Int, sportsTime: Int, starScore: String, title: String, weather: String) {
-        self.content = content
-        self.createdAt = createdAt
-        self.image = image
-        self.sleepTime = sleepTime
-        self.sportsTime = sportsTime
-        self.starScore = starScore
+    public init(title: String, content: String, sportsTime: Int, sleepTime: Int, starScore: String, weather: String, image: String) {
         self.title = title
+        self.content = content
+        self.sportsTime = sportsTime
+        self.sleepTime = sleepTime
+        self.starScore = starScore
         self.weather = weather
+        self.image = image
     }
-
-    public let content: String
-    public let createdAt: Date
-    public let image: String
-    public let sleepTime: Int
-    public let sportsTime: Int
-    public let starScore: String
+    
     public let title: String
+    public let content: String
+    public let sportsTime: Int
+    public let sleepTime: Int
+    public let starScore: String
     public let weather: String
+    public let image: String
 }

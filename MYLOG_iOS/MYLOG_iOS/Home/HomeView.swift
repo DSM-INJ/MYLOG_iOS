@@ -20,8 +20,8 @@ struct HomeView: View {
             
             SlideOverCard($position, backgroundStyle: $background) {
                 DiaryView(viewModel: viewModel, weatherType: "")
-                    .onChange(of: viewModel.selectedDateString) { _ in
-                        viewModel.onAppear()
+                    .onChange(of: viewModel.selectedDate) { _ in
+                        viewModel.onChange()
                     }
             }
             .shadow(color: .black.opacity(0.1), x: 0, y: -2, blur: 20, spread: 0)

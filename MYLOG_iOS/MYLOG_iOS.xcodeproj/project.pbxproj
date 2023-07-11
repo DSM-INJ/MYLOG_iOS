@@ -13,6 +13,8 @@
 		3F3833F72A51B44500798059 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833F62A51B44500798059 /* Launch Screen.storyboard */; };
 		3F65A76B2A5CEE5F00100BFD /* CurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A76A2A5CEE5F00100BFD /* CurrentDate.swift */; };
 		3F65A76D2A5CF17700100BFD /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A76C2A5CF17700100BFD /* Toast.swift */; };
+		3F65A76F2A5D91D800100BFD /* FetchFeedTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A76E2A5D91D800100BFD /* FetchFeedTransfer.swift */; };
+		3F65A7722A5D936100100BFD /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 3F65A7712A5D936100100BFD /* CombineMoya */; };
 		3FC9BED02A59906A0065DAC4 /* HideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9BECF2A59906A0065DAC4 /* HideTabBar.swift */; };
 		3FC9BED22A5992E30065DAC4 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9BED12A5992E30065DAC4 /* Image.xcassets */; };
 		3FC9BED42A5ACE2F0065DAC4 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9BED32A5ACE2F0065DAC4 /* DiaryView.swift */; };
@@ -30,7 +32,6 @@
 		3FE860AD2A5C4A5E00BECBB0 /* BaseRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860AC2A5C4A5E00BECBB0 /* BaseRemoteDataSource.swift */; };
 		3FE860B32A5C5DF500BECBB0 /* FetchEntireFeedResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860B22A5C5DF500BECBB0 /* FetchEntireFeedResponseDTO.swift */; };
 		3FE860B52A5C5F3900BECBB0 /* FetchDetailFeedResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860B42A5C5F3900BECBB0 /* FetchDetailFeedResponseDTO.swift */; };
-		3FE860B72A5C5FF600BECBB0 /* FetchEntireFeedTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860B62A5C5FF600BECBB0 /* FetchEntireFeedTransfer.swift */; };
 		3FE860B92A5C613B00BECBB0 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860B82A5C613B00BECBB0 /* RemoteDataSource.swift */; };
 		3FE860BB2A5C621800BECBB0 /* RemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860BA2A5C621800BECBB0 /* RemoteDataSourceImpl.swift */; };
 		3FE860BF2A5C67B600BECBB0 /* PostNewDiaryRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860BE2A5C67B600BECBB0 /* PostNewDiaryRequestDTO.swift */; };
@@ -58,6 +59,7 @@
 		3F3833F62A51B44500798059 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		3F65A76A2A5CEE5F00100BFD /* CurrentDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDate.swift; sourceTree = "<group>"; };
 		3F65A76C2A5CF17700100BFD /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		3F65A76E2A5D91D800100BFD /* FetchFeedTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFeedTransfer.swift; sourceTree = "<group>"; };
 		3FC9BECF2A59906A0065DAC4 /* HideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTabBar.swift; sourceTree = "<group>"; };
 		3FC9BED12A5992E30065DAC4 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		3FC9BED32A5ACE2F0065DAC4 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
@@ -74,7 +76,6 @@
 		3FE860AC2A5C4A5E00BECBB0 /* BaseRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRemoteDataSource.swift; sourceTree = "<group>"; };
 		3FE860B22A5C5DF500BECBB0 /* FetchEntireFeedResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEntireFeedResponseDTO.swift; sourceTree = "<group>"; };
 		3FE860B42A5C5F3900BECBB0 /* FetchDetailFeedResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDetailFeedResponseDTO.swift; sourceTree = "<group>"; };
-		3FE860B62A5C5FF600BECBB0 /* FetchEntireFeedTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEntireFeedTransfer.swift; sourceTree = "<group>"; };
 		3FE860B82A5C613B00BECBB0 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
 		3FE860BA2A5C621800BECBB0 /* RemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceImpl.swift; sourceTree = "<group>"; };
 		3FE860BE2A5C67B600BECBB0 /* PostNewDiaryRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNewDiaryRequestDTO.swift; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 			files = (
 				3FC9BED72A5AFF730065DAC4 /* SlideOverCard in Frameworks */,
 				70A6D04C4F96B50FD617C7AC /* Pods_MYLOG_iOS.framework in Frameworks */,
+				3F65A7722A5D936100100BFD /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +210,7 @@
 			children = (
 				3FE860B22A5C5DF500BECBB0 /* FetchEntireFeedResponseDTO.swift */,
 				3FE860B42A5C5F3900BECBB0 /* FetchDetailFeedResponseDTO.swift */,
-				3FE860B62A5C5FF600BECBB0 /* FetchEntireFeedTransfer.swift */,
+				3F65A76E2A5D91D800100BFD /* FetchFeedTransfer.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -328,6 +330,7 @@
 			name = MYLOG_iOS;
 			packageProductDependencies = (
 				3FC9BED62A5AFF730065DAC4 /* SlideOverCard */,
+				3F65A7712A5D936100100BFD /* CombineMoya */,
 			);
 			productName = MYLOG_iOS;
 			productReference = 3F15CF172A504EF9002DD849 /* MYLOG_iOS.app */;
@@ -359,6 +362,7 @@
 			mainGroup = 3F15CF0E2A504EF9002DD849;
 			packageReferences = (
 				3FC9BED52A5AFF730065DAC4 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */,
+				3F65A7702A5D936100100BFD /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 3F15CF182A504EF9002DD849 /* Products */;
 			projectDirPath = "";
@@ -445,6 +449,7 @@
 				3FC9BED42A5ACE2F0065DAC4 /* DiaryView.swift in Sources */,
 				3FC9BED02A59906A0065DAC4 /* HideTabBar.swift in Sources */,
 				3FF76AF92A51C66E00283FE2 /* TagView.swift in Sources */,
+				3F65A76F2A5D91D800100BFD /* FetchFeedTransfer.swift in Sources */,
 				3FF76AE62A51C54C00283FE2 /* SignInView.swift in Sources */,
 				3FE860BF2A5C67B600BECBB0 /* PostNewDiaryRequestDTO.swift in Sources */,
 				3FF76AF72A51C65C00283FE2 /* CustomCalendar.swift in Sources */,
@@ -452,7 +457,6 @@
 				3F65A76D2A5CF17700100BFD /* Toast.swift in Sources */,
 				3FE860B52A5C5F3900BECBB0 /* FetchDetailFeedResponseDTO.swift in Sources */,
 				3FF76AEB2A51C56700283FE2 /* AppState.swift in Sources */,
-				3FE860B72A5C5FF600BECBB0 /* FetchEntireFeedTransfer.swift in Sources */,
 				3FF76AFB2A51C68600283FE2 /* NewDiaryView.swift in Sources */,
 				3FF76AED2A51C59900283FE2 /* TabBarHidden.swift in Sources */,
 				3FF76ADD2A51C06200283FE2 /* ContentView.swift in Sources */,
@@ -674,6 +678,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3F65A7702A5D936100100BFD /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
 		3FC9BED52A5AFF730065DAC4 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/moifort/swiftUI-slide-over-card.git";
@@ -685,6 +697,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3F65A7712A5D936100100BFD /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F65A7702A5D936100100BFD /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
 		3FC9BED62A5AFF730065DAC4 /* SlideOverCard */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3FC9BED52A5AFF730065DAC4 /* XCRemoteSwiftPackageReference "swiftUI-slide-over-card" */;

@@ -43,11 +43,11 @@ struct DiaryView: View {
                         HStack {
                             weatherItem(.SUNNY)
                                 .frame(width: 34)
-                                .foregroundColor(viewModel.selectedWeather?.rawValue == "SUNNY" ? Color("SunColor") : Color("ShadowColor").opacity(0.1))
+                                .foregroundColor(viewModel.response?.weather == "SUNNY" ? Color("SunColor") : Color("ShadowColor").opacity(0.1))
                                 .padding(.trailing, 14)
                             
                             ZStack {
-                                if viewModel.selectedWeather?.rawValue == "CLOUDY" {
+                                if viewModel.response?.weather == "CLOUDY" {
                                     Image("CLOUD")
                                         .resizable()
                                         .frame(width: 43)
@@ -56,18 +56,18 @@ struct DiaryView: View {
                                 
                                 weatherItem(.CLOUDY)
                                     .frame(width: 43)
-                                    .foregroundColor(viewModel.selectedWeather?.rawValue == "CLOUDY" ? .clear : Color("ShadowColor").opacity(0.1))
+                                    .foregroundColor(viewModel.response?.weather == "CLOUDY" ? .clear : Color("ShadowColor").opacity(0.1))
                                     .padding(.trailing, 19)
                             }
                             
                             weatherItem(.RAINY)
                                 .frame(width: 30)
-                                .foregroundColor(viewModel.selectedWeather?.rawValue == "RAINY" ? Color("RainColor") : Color("ShadowColor").opacity(0.1))
+                                .foregroundColor(viewModel.response?.weather == "RAINY" ? Color("RainColor") : Color("ShadowColor").opacity(0.1))
                                 .padding(.trailing, 19)
                             
                             weatherItem(.SNOW)
                                 .frame(width: 30)
-                                .foregroundColor(viewModel.selectedWeather?.rawValue == "SNOW" ? Color("CloudColor") : Color("ShadowColor").opacity(0.1))
+                                .foregroundColor(viewModel.response?.weather == "SNOW" ? Color("CloudColor") : Color("ShadowColor").opacity(0.1))
                         }
                         .frame(height: 30)
                     }
@@ -79,7 +79,7 @@ struct DiaryView: View {
                     .background(Color("SeparatorColor"))
                     .padding(.bottom, 20)
                 
-                KFImage(URL(string: viewModel.imageURL))
+                KFImage(URL(string: viewModel.response?.image ?? ""))
                     .placeholder {
                         Image(systemName: "photo.on.rectangle")
                             .aspectRatio(contentMode: .fit)
@@ -90,13 +90,13 @@ struct DiaryView: View {
                     .padding(.bottom, 28)
                 
                 VStack(alignment: .leading) {
-                    Text(viewModel.textFieldString)
+                    Text(viewModel.response?.title ?? "데이터를 불러오지 못했어요.")
                         .foregroundColor(Color("LargeTitleColor"))
                         .font(.system(size: 20, weight: .bold))
                         .padding(.horizontal, 4)
                         .padding(.bottom, 2)
                     
-                    Text(viewModel.textEditorString)
+                    Text(viewModel.response?.content ?? "데이터를 불러오지 못했어요.")
                         .font(.system(size: 17, weight: .regular))
                         .foregroundColor(Color("SubtitleColor"))
                         .padding(.horizontal, 4)
@@ -111,24 +111,6 @@ struct DiaryView: View {
                             countStars(for: num)
                                 .font(.system(size: 13, weight: .regular))
                                 .foregroundColor(num > starRating ? Color("TodayColor") : Color("SunColor"))
-                                .onTapGesture {
-                                    starRating = num
-                                    switch starRating {
-                                    case 1:
-                                        viewModel.starCount = StarScore.ONE.rawValue
-                                    case 2:
-                                        viewModel.starCount = StarScore.TWO.rawValue
-                                    case 3:
-                                        viewModel.starCount = StarScore.THREE.rawValue
-                                    case 4:
-                                        viewModel.starCount = StarScore.FOUR.rawValue
-                                    case 5:
-                                        viewModel.starCount = StarScore.FIVE.rawValue
-                                    default:
-                                        print("Nothing")
-                                    }
-                                    print(viewModel.starCount)
-                                }
                         }
                         .padding(.top, -2)
                     }
@@ -139,7 +121,7 @@ struct DiaryView: View {
                             .foregroundColor(Color("TodayColor"))
                             .padding(.trailing, 2)
                         
-                        Text("\(viewModel.sleepTime)")
+                        Text(String(viewModel.response?.sleepTime ?? 0))
                             .frame(width: 84, height: 34)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 5)
@@ -156,7 +138,7 @@ struct DiaryView: View {
                             .font(.system(size: 25, weight: .semibold))
                             .foregroundColor(Color("TodayColor"))
                         
-                        Text("\(viewModel.sportsTime)")
+                        Text(String(viewModel.response?.sportsTime ?? 0))
                             .frame(width: 84, height: 34)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 5)

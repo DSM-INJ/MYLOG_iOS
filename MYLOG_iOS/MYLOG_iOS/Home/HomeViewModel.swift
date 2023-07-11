@@ -10,47 +10,19 @@ import Combine
 
 class HomeViewModel: BaseViewModel {
     @Published var selectedDate = Date()
-    @Published var selectedDateString = ""
-    @Published var selectedWeather: WeatherType?
-    @Published var textFieldString: String = ""
-    @Published var textEditorString: String = ""
-    @Published var imageURL: String = ""
-    @Published var starCount: String = ""
-    @Published var sleepTime: Int = 0
-    @Published var sportsTime: Int = 0
     
     @Published var response: FeedEntity?
     
-//    init(response: FeedEntity?) {
-//        self.response = response
-//    }
-    
     private let remoteDataSourceImpl = RemoteDataSourceImpl()
     
-    func onAppear() {
+    func onChange() {
         addCancellable(
-            remoteDataSourceImpl.fetchDetailFeed(selectedDateString)
+            remoteDataSourceImpl.fetchDetailFeed(selectedDate.now())
         ) { [weak self] data in
-//            switch data.weather {
-//            case "SUNNY":
-//                self?.selectedWeather = .SUNNY
-//            case "CLOUDY":
-//                self?.selectedWeather = .CLOUDY
-//            case "RAINY":
-//                self?.selectedWeather = .RAINY
-//            case "SNOW":
-//                self?.selectedWeather = .SNOW
-//            default:
-//                print("Nothing Transfered")
-//            }
-//
-//            self?.textFieldString = data.title
-//            self?.textEditorString = data.content
-//            self?.imageURL = data.image
-//            self?.starCount = data.starScore
-//            self?.sleepTime = data.sleepTime
-//            self?.sportsTime = data.sportsTime
             self?.response = data
+        } onReceiveError: { [weak self] _ in
+            self?.isErrorOcuured = true
+            self?.errorMessage = "데이터를 불러오지 못했어요. 다시 시도해주세요."
         }
     }
 }
