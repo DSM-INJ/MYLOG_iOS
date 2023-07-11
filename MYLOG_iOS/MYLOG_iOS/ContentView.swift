@@ -27,9 +27,9 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             TabView(selection: $selection) {
-                HomeView()
+                HomeView(viewModel: HomeViewModel())
                     .tag(TabFlow.home)
-                TagView()
+                TagView(viewModel: TagViewModel())
                     .tag(TabFlow.tag)
                 NewDiaryView(viewModel: NewDiaryViewModel())
                     .tag(TabFlow.newDiary)

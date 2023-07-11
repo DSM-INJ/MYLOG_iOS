@@ -1,17 +1,22 @@
-//
-//  CustomCalendar.swift
-//  MYLOG_iOS
-//
-//  Created by 강인혜 on 2/7/23.
-//
-
 import FSCalendar
 import SwiftUI
 import Then
 import SnapKit
 
 class CustomCalendarVC: UIViewController, FSCalendarDelegate, FSCalendarDelegateAppearance, FSCalendarDataSource {
-    lazy var selectedData = Date()
+    private var viewModel: HomeViewModel
+
+    private var selectedDate = Date()
+
+    init(viewModel: HomeViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     let fscalendar = FSCalendar().then {
         $0.appearance.weekdayFont = .systemFont(ofSize: 14, weight: .light)
         $0.appearance.weekdayTextColor = UIColor(named: "SubtitleColor")
@@ -91,9 +96,8 @@ class CustomCalendarVC: UIViewController, FSCalendarDelegate, FSCalendarDelegate
         
         fscalendar.delegate = self
         fscalendar.dataSource = self
-        
-        fscalendar.select(self.selectedData)
-        
+
+        fscalendar.select(self.selectedDate)
     }
     
     override func viewWillLayoutSubviews() {
@@ -165,23 +169,39 @@ class CustomCalendarVC: UIViewController, FSCalendarDelegate, FSCalendarDelegate
             $0.left.equalTo(friLabel.snp.right).offset(30)
         }
     }
+    
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        calendar.select(date)
+        viewModel.selectedDate = date
+    }
 }
 
 struct CustomCalendarView: UIViewControllerRepresentable {
+    var viewModel: HomeViewModel
+
+    init(viewModel: HomeViewModel) {
+        self.viewModel = viewModel
+    }
+
     typealias UIViewControllerType = UIViewController
     
     func makeUIViewController(context: Context) -> UIViewController {
-        let customCalendarVC = CustomCalendarVC()
+        let customCalendarVC = CustomCalendarVC(viewModel: viewModel)
         return customCalendarVC
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
         //updates view
+        DispatchQueue.main.async {
+            viewModel.objectWillChange.send()
+        }
     }
 }
 
 struct CustomCalendar: View {
+    @StateObject var viewModel: HomeViewModel
+
     var body: some View {
-        CustomCalendarView()
+        CustomCalendarView(viewModel: viewModel)
     }
 }

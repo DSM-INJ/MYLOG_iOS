@@ -11,12 +11,29 @@
 		3F15CF1F2A504EFA002DD849 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F15CF1E2A504EFA002DD849 /* Color.xcassets */; };
 		3F15CF222A504EFA002DD849 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F15CF212A504EFA002DD849 /* Preview Assets.xcassets */; };
 		3F3833F72A51B44500798059 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3833F62A51B44500798059 /* Launch Screen.storyboard */; };
+		3F65A76B2A5CEE5F00100BFD /* CurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A76A2A5CEE5F00100BFD /* CurrentDate.swift */; };
+		3F65A76D2A5CF17700100BFD /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A76C2A5CF17700100BFD /* Toast.swift */; };
 		3FC9BED02A59906A0065DAC4 /* HideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9BECF2A59906A0065DAC4 /* HideTabBar.swift */; };
 		3FC9BED22A5992E30065DAC4 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9BED12A5992E30065DAC4 /* Image.xcassets */; };
 		3FC9BED42A5ACE2F0065DAC4 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9BED32A5ACE2F0065DAC4 /* DiaryView.swift */; };
 		3FC9BED72A5AFF730065DAC4 /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = 3FC9BED62A5AFF730065DAC4 /* SlideOverCard */; };
 		3FE860922A5BE7D800BECBB0 /* NewDiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860912A5BE7D800BECBB0 /* NewDiaryViewModel.swift */; };
 		3FE860942A5BE81200BECBB0 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860932A5BE81200BECBB0 /* BaseViewModel.swift */; };
+		3FE860962A5C0D4F00BECBB0 /* TagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860952A5C0D4F00BECBB0 /* TagViewModel.swift */; };
+		3FE860982A5C0D6800BECBB0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860972A5C0D6800BECBB0 /* HomeViewModel.swift */; };
+		3FE8609E2A5C16E200BECBB0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE8609D2A5C16E200BECBB0 /* API.swift */; };
+		3FE860A02A5C18A700BECBB0 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE8609F2A5C18A700BECBB0 /* BaseAPI.swift */; };
+		3FE860A22A5C1F2600BECBB0 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860A12A5C1F2600BECBB0 /* ErrorType.swift */; };
+		3FE860A72A5C253C00BECBB0 /* FeedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860A62A5C253C00BECBB0 /* FeedEntity.swift */; };
+		3FE860A92A5C422500BECBB0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860A82A5C422500BECBB0 /* ImagePicker.swift */; };
+		3FE860AB2A5C49E400BECBB0 /* MoyaLogginPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860AA2A5C49E400BECBB0 /* MoyaLogginPlugin.swift */; };
+		3FE860AD2A5C4A5E00BECBB0 /* BaseRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860AC2A5C4A5E00BECBB0 /* BaseRemoteDataSource.swift */; };
+		3FE860B32A5C5DF500BECBB0 /* FetchEntireFeedResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860B22A5C5DF500BECBB0 /* FetchEntireFeedResponseDTO.swift */; };
+		3FE860B52A5C5F3900BECBB0 /* FetchDetailFeedResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860B42A5C5F3900BECBB0 /* FetchDetailFeedResponseDTO.swift */; };
+		3FE860B72A5C5FF600BECBB0 /* FetchEntireFeedTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860B62A5C5FF600BECBB0 /* FetchEntireFeedTransfer.swift */; };
+		3FE860B92A5C613B00BECBB0 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860B82A5C613B00BECBB0 /* RemoteDataSource.swift */; };
+		3FE860BB2A5C621800BECBB0 /* RemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860BA2A5C621800BECBB0 /* RemoteDataSourceImpl.swift */; };
+		3FE860BF2A5C67B600BECBB0 /* PostNewDiaryRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE860BE2A5C67B600BECBB0 /* PostNewDiaryRequestDTO.swift */; };
 		3FF76ADD2A51C06200283FE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76ADC2A51C06200283FE2 /* ContentView.swift */; };
 		3FF76AE62A51C54C00283FE2 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AE52A51C54C00283FE2 /* SignInView.swift */; };
 		3FF76AEB2A51C56700283FE2 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF76AEA2A51C56700283FE2 /* AppState.swift */; };
@@ -39,11 +56,28 @@
 		3F15CF1E2A504EFA002DD849 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		3F15CF212A504EFA002DD849 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3F3833F62A51B44500798059 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		3F65A76A2A5CEE5F00100BFD /* CurrentDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDate.swift; sourceTree = "<group>"; };
+		3F65A76C2A5CF17700100BFD /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		3FC9BECF2A59906A0065DAC4 /* HideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTabBar.swift; sourceTree = "<group>"; };
 		3FC9BED12A5992E30065DAC4 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		3FC9BED32A5ACE2F0065DAC4 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
 		3FE860912A5BE7D800BECBB0 /* NewDiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiaryViewModel.swift; sourceTree = "<group>"; };
 		3FE860932A5BE81200BECBB0 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		3FE860952A5C0D4F00BECBB0 /* TagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewModel.swift; sourceTree = "<group>"; };
+		3FE860972A5C0D6800BECBB0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3FE8609D2A5C16E200BECBB0 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		3FE8609F2A5C18A700BECBB0 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		3FE860A12A5C1F2600BECBB0 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
+		3FE860A62A5C253C00BECBB0 /* FeedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEntity.swift; sourceTree = "<group>"; };
+		3FE860A82A5C422500BECBB0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		3FE860AA2A5C49E400BECBB0 /* MoyaLogginPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLogginPlugin.swift; sourceTree = "<group>"; };
+		3FE860AC2A5C4A5E00BECBB0 /* BaseRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRemoteDataSource.swift; sourceTree = "<group>"; };
+		3FE860B22A5C5DF500BECBB0 /* FetchEntireFeedResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEntireFeedResponseDTO.swift; sourceTree = "<group>"; };
+		3FE860B42A5C5F3900BECBB0 /* FetchDetailFeedResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDetailFeedResponseDTO.swift; sourceTree = "<group>"; };
+		3FE860B62A5C5FF600BECBB0 /* FetchEntireFeedTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEntireFeedTransfer.swift; sourceTree = "<group>"; };
+		3FE860B82A5C613B00BECBB0 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		3FE860BA2A5C621800BECBB0 /* RemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceImpl.swift; sourceTree = "<group>"; };
+		3FE860BE2A5C67B600BECBB0 /* PostNewDiaryRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNewDiaryRequestDTO.swift; sourceTree = "<group>"; };
 		3FF76ADC2A51C06200283FE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3FF76AE52A51C54C00283FE2 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		3FF76AEA2A51C56700283FE2 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -94,6 +128,7 @@
 		3F15CF192A504EF9002DD849 /* MYLOG_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				3FE860992A5C113600BECBB0 /* Networking */,
 				3FF76AE92A51C55E00283FE2 /* Interfaces */,
 				3FF76AE42A51C53B00283FE2 /* SignIn */,
 				3FF76AE32A51C2BB00283FE2 /* Home */,
@@ -117,6 +152,73 @@
 				3F15CF212A504EFA002DD849 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3FE860992A5C113600BECBB0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3FE860A32A5C220D00BECBB0 /* DataSource */,
+				3FE8609C2A5C16D900BECBB0 /* API */,
+				3FE8609B2A5C16D200BECBB0 /* Entity */,
+				3FE8609A2A5C16C800BECBB0 /* DTO */,
+				3FE860AA2A5C49E400BECBB0 /* MoyaLogginPlugin.swift */,
+				3FE860AC2A5C4A5E00BECBB0 /* BaseRemoteDataSource.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3FE8609A2A5C16C800BECBB0 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				3FE860B12A5C5DB600BECBB0 /* Request */,
+				3FE860B02A5C5DAF00BECBB0 /* Response */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		3FE8609B2A5C16D200BECBB0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3FE860A62A5C253C00BECBB0 /* FeedEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		3FE8609C2A5C16D900BECBB0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3FE8609D2A5C16E200BECBB0 /* API.swift */,
+				3FE8609F2A5C18A700BECBB0 /* BaseAPI.swift */,
+				3FE860A12A5C1F2600BECBB0 /* ErrorType.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3FE860A32A5C220D00BECBB0 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				3FE860B82A5C613B00BECBB0 /* RemoteDataSource.swift */,
+				3FE860BA2A5C621800BECBB0 /* RemoteDataSourceImpl.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		3FE860B02A5C5DAF00BECBB0 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				3FE860B22A5C5DF500BECBB0 /* FetchEntireFeedResponseDTO.swift */,
+				3FE860B42A5C5F3900BECBB0 /* FetchDetailFeedResponseDTO.swift */,
+				3FE860B62A5C5FF600BECBB0 /* FetchEntireFeedTransfer.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		3FE860B12A5C5DB600BECBB0 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				3FE860BE2A5C67B600BECBB0 /* PostNewDiaryRequestDTO.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 		3FF76ADF2A51C29100283FE2 /* MyPage */ = {
@@ -149,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				3FF76AF82A51C66E00283FE2 /* TagView.swift */,
+				3FE860952A5C0D4F00BECBB0 /* TagViewModel.swift */,
 			);
 			path = Tag;
 			sourceTree = "<group>";
@@ -158,6 +261,7 @@
 			children = (
 				3FF76AF42A51C64300283FE2 /* HomeView.swift */,
 				3FF76AF62A51C65C00283FE2 /* CustomCalendar.swift */,
+				3FE860972A5C0D6800BECBB0 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -180,6 +284,9 @@
 				3FC9BECF2A59906A0065DAC4 /* HideTabBar.swift */,
 				3FC9BED32A5ACE2F0065DAC4 /* DiaryView.swift */,
 				3FE860932A5BE81200BECBB0 /* BaseViewModel.swift */,
+				3FE860A82A5C422500BECBB0 /* ImagePicker.swift */,
+				3F65A76A2A5CEE5F00100BFD /* CurrentDate.swift */,
+				3F65A76C2A5CF17700100BFD /* Toast.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -323,22 +430,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE860982A5C0D6800BECBB0 /* HomeViewModel.swift in Sources */,
 				3FF76AF52A51C64300283FE2 /* HomeView.swift in Sources */,
 				3FE860922A5BE7D800BECBB0 /* NewDiaryViewModel.swift in Sources */,
+				3FE860BB2A5C621800BECBB0 /* RemoteDataSourceImpl.swift in Sources */,
 				3FE860942A5BE81200BECBB0 /* BaseViewModel.swift in Sources */,
+				3FE860B92A5C613B00BECBB0 /* RemoteDataSource.swift in Sources */,
+				3FE860B32A5C5DF500BECBB0 /* FetchEntireFeedResponseDTO.swift in Sources */,
 				3FF76AFD2A51C69B00283FE2 /* ChartView.swift in Sources */,
 				3FF76AF32A51C5DF00283FE2 /* ShadowStyle.swift in Sources */,
+				3FE860A22A5C1F2600BECBB0 /* ErrorType.swift in Sources */,
+				3FE860A02A5C18A700BECBB0 /* BaseAPI.swift in Sources */,
+				3FE860962A5C0D4F00BECBB0 /* TagViewModel.swift in Sources */,
 				3FC9BED42A5ACE2F0065DAC4 /* DiaryView.swift in Sources */,
 				3FC9BED02A59906A0065DAC4 /* HideTabBar.swift in Sources */,
 				3FF76AF92A51C66E00283FE2 /* TagView.swift in Sources */,
 				3FF76AE62A51C54C00283FE2 /* SignInView.swift in Sources */,
+				3FE860BF2A5C67B600BECBB0 /* PostNewDiaryRequestDTO.swift in Sources */,
 				3FF76AF72A51C65C00283FE2 /* CustomCalendar.swift in Sources */,
 				3FF76AFF2A51C6AF00283FE2 /* MyPageView.swift in Sources */,
+				3F65A76D2A5CF17700100BFD /* Toast.swift in Sources */,
+				3FE860B52A5C5F3900BECBB0 /* FetchDetailFeedResponseDTO.swift in Sources */,
 				3FF76AEB2A51C56700283FE2 /* AppState.swift in Sources */,
+				3FE860B72A5C5FF600BECBB0 /* FetchEntireFeedTransfer.swift in Sources */,
 				3FF76AFB2A51C68600283FE2 /* NewDiaryView.swift in Sources */,
 				3FF76AED2A51C59900283FE2 /* TabBarHidden.swift in Sources */,
 				3FF76ADD2A51C06200283FE2 /* ContentView.swift in Sources */,
 				3FF76AF12A51C5C700283FE2 /* CornerRadius.swift in Sources */,
+				3FE8609E2A5C16E200BECBB0 /* API.swift in Sources */,
+				3FE860AD2A5C4A5E00BECBB0 /* BaseRemoteDataSource.swift in Sources */,
+				3FE860AB2A5C49E400BECBB0 /* MoyaLogginPlugin.swift in Sources */,
+				3FE860A92A5C422500BECBB0 /* ImagePicker.swift in Sources */,
+				3FE860A72A5C253C00BECBB0 /* FeedEntity.swift in Sources */,
+				3F65A76B2A5CEE5F00100BFD /* CurrentDate.swift in Sources */,
 				3F15CF1B2A504EF9002DD849 /* MYLOG_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +495,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -432,7 +556,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
+import Charts
 
 struct ChartView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView(showsIndicators: false) {
+            VStack(alignment: .leading) {
+                Text("지난주 나의 생활 분석")
+                    .font(.system(size: 30, weight: .bold))
+                    .foregroundColor(Color("TitleColor"))
+                    .padding(.top, 42)
+            }
+            .frame(maxWidth: .infinity)
         }
-        .padding()
     }
 }
 

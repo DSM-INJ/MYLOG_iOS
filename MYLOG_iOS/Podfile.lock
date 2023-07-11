@@ -5,6 +5,8 @@ PODS:
   - Kingfisher (7.8.1)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
+  - Moya/Combine (15.0.0):
+    - Moya/Core
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
   - Moya/RxSwift (15.0.0):
@@ -25,6 +27,7 @@ DEPENDENCIES:
   - FSCalendar
   - Kingfisher
   - Moya
+  - Moya/Combine
   - Moya/RxSwift
   - RxCocoa
   - RxSwift
@@ -56,6 +59,6 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 2e5eaf3a1cbb4a80c185986b0712ab9b91652bbe
+PODFILE CHECKSUM: a40e203a639b7608ad80b82ea55dc68a3db8e4f5
 
 COCOAPODS: 1.12.1

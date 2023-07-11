@@ -9,6 +9,7 @@ target 'MYLOG_iOS' do
 	pod 'Alamofire'
 	pod 'Moya'
 	pod 'Moya/RxSwift'
+	pod 'Moya/Combine'
 	pod 'RxSwift'
 	pod 'RxCocoa'
 	pod 'SnapKit'

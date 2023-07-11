@@ -9,16 +9,20 @@ import SwiftUI
 import SlideOverCard
 
 struct HomeView: View {
+    @StateObject var viewModel: HomeViewModel
     @State var isShowingSheet = true
     @State private var position = CardPosition.middle
     @State private var background = BackgroundStyle.solid
-
+    
     var body: some View {
         ZStack(alignment: .center) {
-            CustomCalendar()
-
+            CustomCalendar(viewModel: viewModel)
+            
             SlideOverCard($position, backgroundStyle: $background) {
-                DiaryView(weatherType: "SUNNY")
+                DiaryView(viewModel: viewModel, weatherType: "")
+                    .onChange(of: viewModel.selectedDateString) { _ in
+                        viewModel.onAppear()
+                    }
             }
             .shadow(color: .black.opacity(0.1), x: 0, y: -2, blur: 20, spread: 0)
         }
@@ -27,6 +31,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(viewModel: HomeViewModel())
     }
 }
