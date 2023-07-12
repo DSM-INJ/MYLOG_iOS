@@ -12,7 +12,7 @@ public struct FetchDetailFeedResponseDTO: Decodable {
         title: String,
         content: String,
         sportsTime: Int,
-        sleepTime: Int,
+        sleepTIme: Int,
         starScore: String,
         weather: String,
         image: String
@@ -20,7 +20,7 @@ public struct FetchDetailFeedResponseDTO: Decodable {
         self.title = title
         self.content = content
         self.sportsTime = sportsTime
-        self.sleepTime = sleepTime
+        self.sleepTIme = sleepTIme
         self.starScore = starScore
         self.weather = weather
         self.image = image
@@ -29,17 +29,17 @@ public struct FetchDetailFeedResponseDTO: Decodable {
     public let title: String
     public let content: String
     public let sportsTime: Int
-    public let sleepTime: Int
+    public let sleepTIme: Int
     public let starScore: String
     public let weather: String
     public let image: String
 
-    enum CodingKeys: String, CodingKey {
-        case title, content
-        case sportsTime = "sports_time"
-        case sleepTime = "sleep_time"
-        case starScore = "star_score"
-        case weather
-        case image
-    }
+//    enum CodingKeys: String, CodingKey {
+//        case title, content
+//        case sportsTime = "sports_time"
+//        case sleepTime = "sleep_time"
+//        case starScore = "star_score"
+//        case weather
+//        case image
+//    }
 }

@@ -10,7 +10,6 @@ import SlideOverCard
 
 struct HomeView: View {
     @StateObject var viewModel: HomeViewModel
-    @State var isShowingSheet = true
     @State private var position = CardPosition.middle
     @State private var background = BackgroundStyle.solid
     
@@ -19,9 +18,10 @@ struct HomeView: View {
             CustomCalendar(viewModel: viewModel)
             
             SlideOverCard($position, backgroundStyle: $background) {
-                DiaryView(viewModel: viewModel, weatherType: "")
+                DiaryView(viewModel: viewModel)
                     .onChange(of: viewModel.selectedDate) { _ in
-                        viewModel.onChange()
+                        viewModel.response = nil
+                        viewModel.onAppear()
                     }
             }
             .shadow(color: .black.opacity(0.1), x: 0, y: -2, blur: 20, spread: 0)

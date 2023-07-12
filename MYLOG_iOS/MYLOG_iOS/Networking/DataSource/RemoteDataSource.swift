@@ -12,6 +12,8 @@ public protocol RemoteDataSource {
     func fetchEntireFeed() -> AnyPublisher<[FeedEntity], Error>
     func fetchDetailFeed(_ feedID: String) -> AnyPublisher<FeedEntity, Error>
     
+    func searchKeyword(_ keyword: String) -> AnyPublisher<[SearchResultEntity], Error>
+    
     func postNewDiary(_ req: PostNewDiaryRequestDTO) -> AnyPublisher<Void, Error>
     func postNewImage(_ id: String, _ image: Data) -> AnyPublisher<Void, Error>
 }

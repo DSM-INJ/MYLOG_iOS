@@ -16,6 +16,6 @@ public extension FetchEntireFeedResponseDTO {
 
 public extension FetchDetailFeedResponseDTO {
     func toDomain() -> FeedEntity {
-        return FeedEntity(title: title, content: content, sportsTime: sportsTime, sleepTime: sleepTime, starScore: starScore, weather: weather, image: image)
+        return FeedEntity(title: title, content: content, sportsTime: sportsTime, sleepTIme: sleepTIme, starScore: starScore, weather: weather, image: image)
     }
 }

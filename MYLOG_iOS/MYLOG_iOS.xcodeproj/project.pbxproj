@@ -15,6 +15,9 @@
 		3F65A76D2A5CF17700100BFD /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A76C2A5CF17700100BFD /* Toast.swift */; };
 		3F65A76F2A5D91D800100BFD /* FetchFeedTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A76E2A5D91D800100BFD /* FetchFeedTransfer.swift */; };
 		3F65A7722A5D936100100BFD /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 3F65A7712A5D936100100BFD /* CombineMoya */; };
+		3F65A7742A5DB8A000100BFD /* SearchResultEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A7732A5DB8A000100BFD /* SearchResultEntity.swift */; };
+		3F65A7762A5DBA3C00100BFD /* SearchKeywordResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A7752A5DBA3C00100BFD /* SearchKeywordResponseDTO.swift */; };
+		3F65A77C2A5E270C00100BFD /* SearchKeywordTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A77B2A5E270C00100BFD /* SearchKeywordTransfer.swift */; };
 		3FC9BED02A59906A0065DAC4 /* HideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9BECF2A59906A0065DAC4 /* HideTabBar.swift */; };
 		3FC9BED22A5992E30065DAC4 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9BED12A5992E30065DAC4 /* Image.xcassets */; };
 		3FC9BED42A5ACE2F0065DAC4 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9BED32A5ACE2F0065DAC4 /* DiaryView.swift */; };
@@ -60,6 +63,9 @@
 		3F65A76A2A5CEE5F00100BFD /* CurrentDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDate.swift; sourceTree = "<group>"; };
 		3F65A76C2A5CF17700100BFD /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		3F65A76E2A5D91D800100BFD /* FetchFeedTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFeedTransfer.swift; sourceTree = "<group>"; };
+		3F65A7732A5DB8A000100BFD /* SearchResultEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultEntity.swift; sourceTree = "<group>"; };
+		3F65A7752A5DBA3C00100BFD /* SearchKeywordResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchKeywordResponseDTO.swift; sourceTree = "<group>"; };
+		3F65A77B2A5E270C00100BFD /* SearchKeywordTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchKeywordTransfer.swift; sourceTree = "<group>"; };
 		3FC9BECF2A59906A0065DAC4 /* HideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTabBar.swift; sourceTree = "<group>"; };
 		3FC9BED12A5992E30065DAC4 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		3FC9BED32A5ACE2F0065DAC4 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
@@ -182,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				3FE860A62A5C253C00BECBB0 /* FeedEntity.swift */,
+				3F65A7732A5DB8A000100BFD /* SearchResultEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -211,6 +218,8 @@
 				3FE860B22A5C5DF500BECBB0 /* FetchEntireFeedResponseDTO.swift */,
 				3FE860B42A5C5F3900BECBB0 /* FetchDetailFeedResponseDTO.swift */,
 				3F65A76E2A5D91D800100BFD /* FetchFeedTransfer.swift */,
+				3F65A7752A5DBA3C00100BFD /* SearchKeywordResponseDTO.swift */,
+				3F65A77B2A5E270C00100BFD /* SearchKeywordTransfer.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -449,6 +458,7 @@
 				3FC9BED42A5ACE2F0065DAC4 /* DiaryView.swift in Sources */,
 				3FC9BED02A59906A0065DAC4 /* HideTabBar.swift in Sources */,
 				3FF76AF92A51C66E00283FE2 /* TagView.swift in Sources */,
+				3F65A77C2A5E270C00100BFD /* SearchKeywordTransfer.swift in Sources */,
 				3F65A76F2A5D91D800100BFD /* FetchFeedTransfer.swift in Sources */,
 				3FF76AE62A51C54C00283FE2 /* SignInView.swift in Sources */,
 				3FE860BF2A5C67B600BECBB0 /* PostNewDiaryRequestDTO.swift in Sources */,
@@ -460,9 +470,11 @@
 				3FF76AFB2A51C68600283FE2 /* NewDiaryView.swift in Sources */,
 				3FF76AED2A51C59900283FE2 /* TabBarHidden.swift in Sources */,
 				3FF76ADD2A51C06200283FE2 /* ContentView.swift in Sources */,
+				3F65A7742A5DB8A000100BFD /* SearchResultEntity.swift in Sources */,
 				3FF76AF12A51C5C700283FE2 /* CornerRadius.swift in Sources */,
 				3FE8609E2A5C16E200BECBB0 /* API.swift in Sources */,
 				3FE860AD2A5C4A5E00BECBB0 /* BaseRemoteDataSource.swift in Sources */,
+				3F65A7762A5DBA3C00100BFD /* SearchKeywordResponseDTO.swift in Sources */,
 				3FE860AB2A5C49E400BECBB0 /* MoyaLogginPlugin.swift in Sources */,
 				3FE860A92A5C422500BECBB0 /* ImagePicker.swift in Sources */,
 				3FE860A72A5C253C00BECBB0 /* FeedEntity.swift in Sources */,

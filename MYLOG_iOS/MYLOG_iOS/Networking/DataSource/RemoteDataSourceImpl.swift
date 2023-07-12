@@ -1,10 +1,3 @@
-//
-//  RemoteDataSourceImpl.swift
-//  MYLOG_iOS
-//
-//  Created by 강인혜 on 2023/07/11.
-//
-
 import Foundation
 import Combine
 
@@ -21,6 +14,13 @@ public final class RemoteDataSourceImpl: BaseRemoteDataSource<API>, RemoteDataSo
             .eraseToAnyPublisher()
     }
     
+    public func searchKeyword(_ keyword: String) -> AnyPublisher<[SearchResultEntity], Error> {
+        request(.searchKeyword(keyword), dto: SearchListDTO.self)
+            .map { $0.toDomain() }
+            .eraseToAnyPublisher()
+    }
+    
+    
     public func postNewDiary(_ req: PostNewDiaryRequestDTO) -> AnyPublisher<Void, Error> {
         request(.postNewDiary(req))
             .eraseToAnyPublisher()
@@ -29,6 +29,10 @@ public final class RemoteDataSourceImpl: BaseRemoteDataSource<API>, RemoteDataSo
     public func postNewImage(_ id: String, _ image: Data) -> AnyPublisher<Void, Error> {
         request(.postNewImage(id, image))
             .eraseToAnyPublisher()
+    }
+
+    func filErr(err: Error) {
+        print(err.localizedDescription)
     }
     
     

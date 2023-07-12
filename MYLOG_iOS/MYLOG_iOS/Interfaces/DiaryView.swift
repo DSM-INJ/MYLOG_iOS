@@ -3,23 +3,19 @@ import Kingfisher
 
 struct DiaryView: View {
     @StateObject var viewModel: HomeViewModel
-    @State var starRating = 0
-    
-    let weatherType: String?
     
     init(
-        viewModel: HomeViewModel,
-        weatherType: String?
+        viewModel: HomeViewModel
     ) {
         _viewModel = StateObject(wrappedValue: viewModel)
-        self.weatherType = weatherType
+        UIScrollView.appearance().bounces = false
     }
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-            VStack(alignment: .center) {
+            VStack(alignment: .leading) {
                 HStack(alignment: .center) {
-                    VStack {
+                    VStack(alignment: .center) {
                         Text(viewModel.selectedDate.nowDay())
                             .foregroundColor(.black)
                             .frame(height: 40, alignment: .top)
@@ -79,83 +75,88 @@ struct DiaryView: View {
                     .background(Color("SeparatorColor"))
                     .padding(.bottom, 20)
                 
-                KFImage(URL(string: viewModel.response?.image ?? ""))
-                    .placeholder {
-                        Image(systemName: "photo.on.rectangle")
-                            .aspectRatio(contentMode: .fit)
-                    }
-                    .resizable()
-                    .frame(width: 338, height: 338)
-                    .cornerRadius(15, corners: .allCorners)
-                    .padding(.bottom, 28)
-                
-                VStack(alignment: .leading) {
-                    Text(viewModel.response?.title ?? "데이터를 불러오지 못했어요.")
-                        .foregroundColor(Color("LargeTitleColor"))
-                        .font(.system(size: 20, weight: .bold))
-                        .padding(.horizontal, 4)
-                        .padding(.bottom, 2)
+                HStack(alignment: .center) {
+                    Spacer()
                     
-                    Text(viewModel.response?.content ?? "데이터를 불러오지 못했어요.")
-                        .font(.system(size: 17, weight: .regular))
-                        .foregroundColor(Color("SubtitleColor"))
-                        .padding(.horizontal, 4)
-                    
-                    HStack {
-                        Text("오늘 나의 하루")
-                            .font(.system(size: 18, weight: .semibold))
-                            .foregroundColor(Color("ShadowColor"))
-                            .padding(.trailing, 18)
-                        
-                        ForEach(1...5, id: \.self) { num in
-                            countStars(for: num)
-                                .font(.system(size: 13, weight: .regular))
-                                .foregroundColor(num > starRating ? Color("TodayColor") : Color("SunColor"))
+                    KFImage(URL(string: viewModel.response?.image ?? ""))
+                        .placeholder {
+                            Image(systemName: "photo.on.rectangle")
+                                .aspectRatio(contentMode: .fit)
                         }
-                        .padding(.top, -2)
-                    }
+                        .resizable()
+                        .frame(width: 338, height: 338, alignment: .center)
+                        .cornerRadius(15, corners: .allCorners)
+                        .padding(.bottom, 28)
                     
-                    HStack(alignment: .center, spacing: 10) {
-                        Image(systemName: "bed.double.fill")
-                            .font(.system(size: 25, weight: .semibold))
-                            .foregroundColor(Color("TodayColor"))
-                            .padding(.trailing, 2)
-                        
-                        Text(String(viewModel.response?.sleepTime ?? 0))
-                            .frame(width: 84, height: 34)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 5)
-                                    .stroke(lineWidth: 1)
-                            )
-                            .foregroundColor(Color("ShadowColor"))
-                            .textFieldStyle(.roundedBorder)
-                            .font(.system(size: 12, weight: .regular))
-                    }
-                    .padding(.top, 10)
-                    
-                    HStack(alignment: .center, spacing: 10) {
-                        Image(systemName: "dumbbell.fill")
-                            .font(.system(size: 25, weight: .semibold))
-                            .foregroundColor(Color("TodayColor"))
-                        
-                        Text(String(viewModel.response?.sportsTime ?? 0))
-                            .frame(width: 84, height: 34)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 5)
-                                    .stroke(lineWidth: 1)
-                            )
-                            .foregroundColor(Color("ShadowColor"))
-                            .textFieldStyle(.roundedBorder)
-                            .font(.system(size: 12, weight: .regular))
-                    }
-                    .padding(.top, 10)
+                    Spacer()
                 }
-                .padding(.bottom, 82)
                 
-                Spacer(minLength: 300)
+                Text(viewModel.response?.title ?? "데이터를 불러오지 못했어요.")
+                    .foregroundColor(Color("LargeTitleColor"))
+                    .font(.system(size: 20, weight: .bold))
+                    .padding(.horizontal, 4)
+                    .padding(.bottom, 2)
+                
+                Text(viewModel.response?.content ?? "데이터를 불러오지 못했어요.")
+                    .font(.system(size: 17, weight: .regular))
+                    .foregroundColor(Color("SubtitleColor"))
+                    .padding(.horizontal, 4)
+                    .padding(.bottom, 82)
+                
+                HStack {
+                    Text("오늘 나의 하루")
+                        .font(.system(size: 18, weight: .semibold))
+                        .foregroundColor(Color("ShadowColor"))
+                        .padding(.trailing, 18)
+                    
+                    ForEach(1...5, id: \.self) { _ in
+                        countStars(for: viewModel.stars)
+                            .font(.system(size: 13, weight: .regular))
+                            .foregroundColor(viewModel.stars > 0 ? Color("TodayColor") : Color("SunColor"))
+                    }
+                    .padding(.top, -2)
+                }
+                
+                HStack(alignment: .center, spacing: 10) {
+                    Image(systemName: "bed.double.fill")
+                        .font(.system(size: 25, weight: .semibold))
+                        .foregroundColor(Color("TodayColor"))
+                        .padding(.trailing, 2)
+                    
+                    Text(String(viewModel.response?.sleepTIme ?? 0))
+                        .frame(width: 84, height: 34)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(lineWidth: 1)
+                        )
+                        .foregroundColor(Color("ShadowColor"))
+                        .textFieldStyle(.roundedBorder)
+                        .font(.system(size: 12, weight: .regular))
+                }
+                .padding(.top, 10)
+                
+                HStack(alignment: .center, spacing: 10) {
+                    Image(systemName: "dumbbell.fill")
+                        .font(.system(size: 25, weight: .semibold))
+                        .foregroundColor(Color("TodayColor"))
+                    
+                    Text(String(viewModel.response?.sportsTime ?? 0))
+                        .frame(width: 84, height: 34)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(lineWidth: 1)
+                        )
+                        .foregroundColor(Color("ShadowColor"))
+                        .textFieldStyle(.roundedBorder)
+                        .font(.system(size: 12, weight: .regular))
+                }
+                .padding(.top, 10)
+                
+                
+                Spacer(minLength: 100)
             }
+            .frame(maxHeight: .infinity)
         }
-        .frame(maxHeight: .infinity)
         .padding(.top, 30)
         .padding(.horizontal, 24)
     }
@@ -163,7 +164,7 @@ struct DiaryView: View {
     func countStars(for number: Int) -> Image {
         var offImage: Image?
         
-        if number > starRating {
+        if number > 0 {
             return offImage ?? Image(systemName: "star.fill")
         } else {
             return Image(systemName: "star.fill")

@@ -14,6 +14,9 @@ public enum API {
     case fetchEntireFeed
     case fetchDetailFeed(_ feedID: String)
     
+    // Tag
+    case searchKeyword(_ keyword: String)
+    
     // NewDiary
     case postNewDiary(_ req: PostNewDiaryRequestDTO)
     case postNewImage(_ id: String, _ image: Data)
@@ -28,6 +31,8 @@ extension API: BaseAPI {
             return "/feed/list"
         case let .fetchDetailFeed(id):
             return "/feed/\(id)"
+        case .searchKeyword:
+            return "/feed/search"
         case .postNewDiary:
             return "/feed"
         case let .postNewImage(id, _):
@@ -37,7 +42,7 @@ extension API: BaseAPI {
     
     public var method: Moya.Method {
         switch self {
-        case .fetchEntireFeed, .fetchDetailFeed:
+        case .fetchEntireFeed, .fetchDetailFeed, .searchKeyword:
             return .get
         case .postNewDiary:
             return .post
@@ -48,6 +53,13 @@ extension API: BaseAPI {
     
     public var task: Moya.Task {
         switch self {
+        case let .searchKeyword(keyword):
+            return .requestParameters(
+                parameters: [
+                    "keyword": keyword
+                ],
+                encoding: URLEncoding.queryString
+            )
         case let .postNewDiary(req):
             return .requestJSONEncodable(req)
         case let .postNewImage(_, image):

@@ -13,6 +13,10 @@ struct ContentView: View {
 
     @EnvironmentObject var appState: AppState
     
+    init() {
+        UIScrollView.appearance().bounces = false
+    }
+    
     var tabItem: [(String, TabFlow)] {
         let tabItems: [(String, TabFlow)] = [
             ("calendar", .home),

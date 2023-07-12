@@ -173,6 +173,7 @@ class CustomCalendarVC: UIViewController, FSCalendarDelegate, FSCalendarDelegate
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         calendar.select(date)
         viewModel.selectedDate = date
+        viewModel.onAppear()
     }
 }
 
