@@ -16,8 +16,16 @@ struct ChartView: View {
                     .font(.system(size: 30, weight: .bold))
                     .foregroundColor(Color("TitleColor"))
                     .padding(.top, 42)
+                
+                Image("Chart 5")
+                    .resizable()
+                    .frame(height: 370)
+                
+                Image("Chart 3")
+                    .resizable()
+                    .frame(height: 370)
             }
-            .frame(maxWidth: .infinity)
+            .padding(.horizontal, 26)
         }
     }
 }

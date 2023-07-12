@@ -20,6 +20,11 @@ public enum API {
     // NewDiary
     case postNewDiary(_ req: PostNewDiaryRequestDTO)
     case postNewImage(_ id: String, _ image: Data)
+    
+    // Chart
+    case fetchSleepTime
+    case fetchSportsTime
+    case fetchSatisfaction
 }
 
 extension API: BaseAPI {
@@ -33,7 +38,7 @@ extension API: BaseAPI {
             return "/feed/\(id)"
         case .searchKeyword:
             return "/feed/search"
-        case .postNewDiary:
+        case .postNewDiary, .fetchSleepTime, .fetchSportsTime, .fetchSatisfaction:
             return "/feed"
         case let .postNewImage(id, _):
             return "/feed/upload/\(id)"
@@ -42,7 +47,7 @@ extension API: BaseAPI {
     
     public var method: Moya.Method {
         switch self {
-        case .fetchEntireFeed, .fetchDetailFeed, .searchKeyword:
+        case .fetchEntireFeed, .fetchDetailFeed, .searchKeyword, .fetchSleepTime, .fetchSportsTime, .fetchSatisfaction:
             return .get
         case .postNewDiary:
             return .post

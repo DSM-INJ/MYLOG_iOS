@@ -22,8 +22,8 @@ struct ContentView: View {
             ("calendar", .home),
             ("magnifyingglass", .tag),
             ("plus", .newDiary),
-            ("chart.bar.xaxis", .chart),
-            ("person", .myPage)
+            ("chart.bar.xaxis", .chart)
+//            ("person", .myPage)
         ]
         return tabItems
     }
@@ -39,8 +39,8 @@ struct ContentView: View {
                     .tag(TabFlow.newDiary)
                 ChartView()
                     .tag(TabFlow.chart)
-                MyPageView()
-                    .tag(TabFlow.myPage)
+//                MyPageView()
+//                    .tag(TabFlow.myPage)
             }
             .environment(\.tabbarHidden, $tabbarHidden)
             .ignoresSafeArea(.keyboard)

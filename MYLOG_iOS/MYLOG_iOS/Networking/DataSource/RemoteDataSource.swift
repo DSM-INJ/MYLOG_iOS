@@ -16,4 +16,8 @@ public protocol RemoteDataSource {
     
     func postNewDiary(_ req: PostNewDiaryRequestDTO) -> AnyPublisher<Void, Error>
     func postNewImage(_ id: String, _ image: Data) -> AnyPublisher<Void, Error>
+    
+    func fetchSleepTime() -> AnyPublisher<FetchTimeResponseDTO, Error>
+    func fetchSportsTime() -> AnyPublisher<FetchTimeResponseDTO, Error>
+    func fetchSatisfaction() -> AnyPublisher<String, Error>
 }

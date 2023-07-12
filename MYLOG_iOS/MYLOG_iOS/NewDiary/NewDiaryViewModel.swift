@@ -43,6 +43,13 @@ final class NewDiaryViewModel: BaseViewModel {
         ) { [weak self] _ in
             self?.toastMessage = "일기 작성이 완료되었습니다."
             self?.isShowingToast = true
+            self?.selectedWeather = ""
+            self?.textFieldString = ""
+            self?.textEditorString = ""
+            self?.starCount = ""
+            self?.sleepTime = ""
+            self?.sportsTime = ""
+            
         } onReceiveError: { [weak self] _ in
             self?.toastMessage = "문제가 발생했습니다. 다시 시도해주세요."
             self?.isShowingToast = true

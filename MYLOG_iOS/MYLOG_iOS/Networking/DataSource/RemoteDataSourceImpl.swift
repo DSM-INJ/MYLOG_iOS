@@ -31,6 +31,24 @@ public final class RemoteDataSourceImpl: BaseRemoteDataSource<API>, RemoteDataSo
             .eraseToAnyPublisher()
     }
 
+    public func fetchSleepTime() -> AnyPublisher<FetchTimeResponseDTO, Error> {
+        request(.fetchSleepTime, dto: FetchTimeResponseDTO.self)
+            .map { $0.toDomain() }
+            .eraseToAnyPublisher()
+    }
+
+    public func fetchSportsTime() -> AnyPublisher<FetchTimeResponseDTO, Error> {
+        request(.fetchSportsTime, dto: FetchTimeResponseDTO.self)
+            .map { $0.toDomain() }
+            .eraseToAnyPublisher()
+    }
+    
+    public func fetchSatisfaction() -> AnyPublisher<String, Error> {
+        request(.fetchSatisfaction, dto: FetchSatisfactionResponseDTO.self)
+            .map(\.satisfaction)
+            .eraseToAnyPublisher()
+    }
+    
     func filErr(err: Error) {
         print(err.localizedDescription)
     }

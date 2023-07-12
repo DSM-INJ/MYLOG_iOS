@@ -18,6 +18,8 @@
 		3F65A7742A5DB8A000100BFD /* SearchResultEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A7732A5DB8A000100BFD /* SearchResultEntity.swift */; };
 		3F65A7762A5DBA3C00100BFD /* SearchKeywordResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A7752A5DBA3C00100BFD /* SearchKeywordResponseDTO.swift */; };
 		3F65A77C2A5E270C00100BFD /* SearchKeywordTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A77B2A5E270C00100BFD /* SearchKeywordTransfer.swift */; };
+		3F65A77E2A5E504900100BFD /* FetchTimeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A77D2A5E504900100BFD /* FetchTimeResponseDTO.swift */; };
+		3F65A7822A5E658800100BFD /* FetchSatisfactionResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A7812A5E658800100BFD /* FetchSatisfactionResponseDTO.swift */; };
 		3FC9BED02A59906A0065DAC4 /* HideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9BECF2A59906A0065DAC4 /* HideTabBar.swift */; };
 		3FC9BED22A5992E30065DAC4 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9BED12A5992E30065DAC4 /* Image.xcassets */; };
 		3FC9BED42A5ACE2F0065DAC4 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9BED32A5ACE2F0065DAC4 /* DiaryView.swift */; };
@@ -66,6 +68,8 @@
 		3F65A7732A5DB8A000100BFD /* SearchResultEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultEntity.swift; sourceTree = "<group>"; };
 		3F65A7752A5DBA3C00100BFD /* SearchKeywordResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchKeywordResponseDTO.swift; sourceTree = "<group>"; };
 		3F65A77B2A5E270C00100BFD /* SearchKeywordTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchKeywordTransfer.swift; sourceTree = "<group>"; };
+		3F65A77D2A5E504900100BFD /* FetchTimeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTimeResponseDTO.swift; sourceTree = "<group>"; };
+		3F65A7812A5E658800100BFD /* FetchSatisfactionResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSatisfactionResponseDTO.swift; sourceTree = "<group>"; };
 		3FC9BECF2A59906A0065DAC4 /* HideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTabBar.swift; sourceTree = "<group>"; };
 		3FC9BED12A5992E30065DAC4 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		3FC9BED32A5ACE2F0065DAC4 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 				3F65A76E2A5D91D800100BFD /* FetchFeedTransfer.swift */,
 				3F65A7752A5DBA3C00100BFD /* SearchKeywordResponseDTO.swift */,
 				3F65A77B2A5E270C00100BFD /* SearchKeywordTransfer.swift */,
+				3F65A77D2A5E504900100BFD /* FetchTimeResponseDTO.swift */,
+				3F65A7812A5E658800100BFD /* FetchSatisfactionResponseDTO.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -465,6 +471,7 @@
 				3FF76AF72A51C65C00283FE2 /* CustomCalendar.swift in Sources */,
 				3FF76AFF2A51C6AF00283FE2 /* MyPageView.swift in Sources */,
 				3F65A76D2A5CF17700100BFD /* Toast.swift in Sources */,
+				3F65A77E2A5E504900100BFD /* FetchTimeResponseDTO.swift in Sources */,
 				3FE860B52A5C5F3900BECBB0 /* FetchDetailFeedResponseDTO.swift in Sources */,
 				3FF76AEB2A51C56700283FE2 /* AppState.swift in Sources */,
 				3FF76AFB2A51C68600283FE2 /* NewDiaryView.swift in Sources */,
@@ -472,6 +479,7 @@
 				3FF76ADD2A51C06200283FE2 /* ContentView.swift in Sources */,
 				3F65A7742A5DB8A000100BFD /* SearchResultEntity.swift in Sources */,
 				3FF76AF12A51C5C700283FE2 /* CornerRadius.swift in Sources */,
+				3F65A7822A5E658800100BFD /* FetchSatisfactionResponseDTO.swift in Sources */,
 				3FE8609E2A5C16E200BECBB0 /* API.swift in Sources */,
 				3FE860AD2A5C4A5E00BECBB0 /* BaseRemoteDataSource.swift in Sources */,
 				3F65A7762A5DBA3C00100BFD /* SearchKeywordResponseDTO.swift in Sources */,

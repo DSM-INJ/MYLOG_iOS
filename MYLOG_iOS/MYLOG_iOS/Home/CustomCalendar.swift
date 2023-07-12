@@ -18,6 +18,7 @@ class CustomCalendarVC: UIViewController, FSCalendarDelegate, FSCalendarDelegate
     }
     
     let fscalendar = FSCalendar().then {
+        $0.locale = Locale(identifier: "en")
         $0.appearance.weekdayFont = .systemFont(ofSize: 14, weight: .light)
         $0.appearance.weekdayTextColor = UIColor(named: "SubtitleColor")
         $0.calendarWeekdayView.weekdayLabels[0].textColor = .red
