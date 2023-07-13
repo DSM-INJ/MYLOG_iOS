@@ -16,7 +16,7 @@ public protocol BaseAPI: TargetType {
 
 public extension BaseAPI {
     var baseURL: URL {
-        return URL(string: "https://83a0-14-50-190-128.ngrok-free.app")!
+        return URL(string: "https://29e0-14-50-190-128.ngrok-free.app")!
     }
 
     var path: String {
